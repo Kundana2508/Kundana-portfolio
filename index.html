@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kundana Rangineni | AI/ML Engineer</title>
+<meta name="description" content="Portfolio of Kundana Rangineni, AI/ML Engineer specializing in Machine Learning, Generative AI, RAG, NLP, MLOps and cloud AI systems.">
+<style>
+:root{
+  --bg:#0b1020;
+  --panel:#121933;
+  --panel2:#182042;
+  --text:#f8fafc;
+  --muted:#a8b3cf;
+  --line:#283250;
+  --accent:#8b5cf6;
+  --accent2:#06b6d4;
+  --max:1180px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  background:
+    radial-gradient(circle at 15% 10%,rgba(139,92,246,.16),transparent 30%),
+    radial-gradient(circle at 85% 20%,rgba(6,182,212,.12),transparent 28%),
+    var(--bg);
+  color:var(--text);
+}
+a{text-decoration:none;color:inherit}
+.container{width:min(var(--max),calc(100% - 34px));margin:auto}
+nav{
+  position:sticky;top:0;z-index:50;
+  background:rgba(11,16,32,.85);
+  backdrop-filter:blur(16px);
+  border-bottom:1px solid var(--line)
+}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:16px 0}
+.brand{font-weight:900;letter-spacing:-.02em}
+.links{display:flex;gap:18px;flex-wrap:wrap;color:var(--muted);font-size:14px;font-weight:700}
+.links a:hover{color:white}
+section{padding:78px 0}
+.hero{padding-top:100px}
+.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:30px;align-items:center}
+.eyebrow{
+  color:#b7a4ff;text-transform:uppercase;letter-spacing:.16em;
+  font-size:12px;font-weight:900;margin-bottom:14px
+}
+h1{font-size:clamp(48px,7vw,84px);line-height:.98;letter-spacing:-.055em;margin:0 0 20px}
+.hero h1 span{background:linear-gradient(90deg,#c4b5fd,#67e8f9);-webkit-background-clip:text;color:transparent}
+.lead{font-size:19px;line-height:1.8;color:var(--muted);max-width:800px}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-block;padding:13px 18px;border-radius:999px;font-weight:850;border:1px solid var(--line)}
+.btn.primary{background:linear-gradient(90deg,var(--accent),var(--accent2));border:none}
+.btn.secondary{background:#121933}
+.hero-card,.card,.exp,.skill,.cert,.edu,.contact-card{
+  border:1px solid var(--line);
+  background:linear-gradient(180deg,rgba(24,32,66,.92),rgba(18,25,51,.92));
+  border-radius:26px;
+  box-shadow:0 18px 55px rgba(0,0,0,.22)
+}
+.hero-card{padding:28px}
+.hero-card h3{font-size:23px;margin:0 0 14px}
+.hero-card p{color:var(--muted);line-height:1.75}
+.stack{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.tag{font-size:12px;font-weight:800;color:#dbe5ff;background:#20294d;border:1px solid #344069;padding:8px 10px;border-radius:999px}
+.section-title{font-size:40px;letter-spacing:-.035em;margin:0 0 12px}
+.section-sub{color:var(--muted);line-height:1.8;max-width:850px}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:25px}
+.card{padding:25px}.card p{color:var(--muted);line-height:1.8}
+.projects{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-top:28px}
+.project{padding:0;overflow:hidden}
+.visual{height:170px;padding:22px;display:flex;align-items:flex-end;background:linear-gradient(135deg,#312e81,#0e7490)}
+.project:nth-child(2) .visual{background:linear-gradient(135deg,#172554,#1d4ed8)}
+.project:nth-child(3) .visual{background:linear-gradient(135deg,#3b0764,#7e22ce)}
+.project:nth-child(4) .visual{background:linear-gradient(135deg,#164e63,#0f766e)}
+.project:nth-child(5) .visual{background:linear-gradient(135deg,#111827,#4338ca)}
+.project-body{padding:24px}
+.project h3{font-size:24px;margin:0 0 10px}
+.project p{color:var(--muted);line-height:1.72;margin:0}
+.project .btn{margin-top:20px}
+.experience{display:grid;gap:18px;margin-top:28px}
+.exp{padding:25px}
+.exp-head{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
+.exp h3{margin:0;font-size:24px}
+.exp-meta{color:#b7a4ff;font-weight:800}
+.exp li{color:var(--muted);line-height:1.75;margin:8px 0}
+.skills{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:26px}
+.skill{padding:21px}
+.skill h3{margin:0 0 12px}
+.skill p{color:var(--muted);line-height:1.72;margin:0}
+.certs{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:26px}
+.cert{padding:22px;font-weight:850;line-height:1.5}
+.edu-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:26px}
+.edu{padding:22px}.edu p{color:var(--muted);line-height:1.65}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:26px}
+.contact-card{padding:24px}
+.contact-card p{color:var(--muted);line-height:1.75}
+.contact-line{padding:12px 0;border-bottom:1px solid var(--line)}
+footer{padding:30px 0 50px;color:var(--muted);text-align:center}
+@media(max-width:900px){
+  .hero-grid,.about-grid,.projects,.contact-grid,.edu-grid{grid-template-columns:1fr}
+  .skills,.certs{grid-template-columns:1fr 1fr}
+}
+@media(max-width:620px){
+  .nav-inner{flex-direction:column;align-items:flex-start}
+  .skills,.certs{grid-template-columns:1fr}
+  section{padding:58px 0}
+}
+</style>
+</head>
+<body>
+<nav>
+  <div class="container nav-inner">
+    <div class="brand">KUNDANA RANGINENI</div>
+    <div class="links">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<main class="container">
+<section class="hero">
+  <div class="hero-grid">
+    <div>
+      <div class="eyebrow">AI/ML Engineer · Machine Learning · Generative AI · MLOps</div>
+      <h1>I build <span>intelligent systems</span> from data to production.</h1>
+      <p class="lead">
+        AI/ML Engineer with 3+ years of experience across the end-to-end machine learning lifecycle,
+        including predictive modeling, deep learning, NLP, RAG, scalable data pipelines, model deployment,
+        monitoring, and cloud-based AI solutions.
+      </p>
+      <div class="cta">
+        <a class="btn primary" href="#projects">Explore Projects</a>
+        <a class="btn secondary" href="https://github.com/Kundana2508" target="_blank">GitHub</a>
+        <a class="btn secondary" href="https://www.linkedin.com/in/kundana2500" target="_blank">LinkedIn</a>
+        <a class="btn secondary" href="Kundana_Rangineni_Resume.docx">Resume</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <h3>Core Focus</h3>
+      <p>Building practical AI systems that combine modeling depth with production engineering.</p>
+      <div class="stack">
+        <span class="tag">Python</span><span class="tag">PyTorch</span><span class="tag">TensorFlow</span>
+        <span class="tag">Scikit-learn</span><span class="tag">RAG</span><span class="tag">LLMs</span>
+        <span class="tag">Hugging Face</span><span class="tag">MLflow</span><span class="tag">FastAPI</span>
+        <span class="tag">AWS</span><span class="tag">Docker</span><span class="tag">Kubernetes</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="eyebrow">About</div>
+  <h2 class="section-title">AI engineering beyond the notebook.</h2>
+  <p class="section-sub">
+    My work spans data engineering, machine learning, Generative AI, and MLOps. I enjoy turning complex
+    datasets and AI requirements into reliable systems that can be evaluated, served, automated, and monitored.
+  </p>
+  <div class="about-grid">
+    <div class="card">
+      <h3>Machine Learning & Deep Learning</h3>
+      <p>Predictive modeling, classification, regression, anomaly detection, feature engineering, model evaluation, neural networks, and deep learning.</p>
+    </div>
+    <div class="card">
+      <h3>Generative AI & Production ML</h3>
+      <p>LLMs, RAG, embeddings, semantic search, document Q&A, REST APIs, MLflow, CI/CD, containerization, orchestration, and cloud deployment.</p>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="eyebrow">Experience</div>
+  <h2 class="section-title">Professional experience</h2>
+  <div class="experience">
+    <article class="exp">
+      <div class="exp-head">
+        <div><h3>AI/ML Engineer · Lear Corporation</h3><div class="section-sub">Southfield, Michigan</div></div>
+        <div class="exp-meta">Mar 2025 – Present</div>
+      </div>
+      <ul>
+        <li>Develop Python and SQL-based ML solutions for predictive analytics, classification, anomaly detection, and decision-support use cases.</li>
+        <li>Build end-to-end ML pipelines covering ingestion, validation, feature engineering, training, evaluation, inference, and scheduled processing.</li>
+        <li>Develop NLP and Generative AI applications using LLMs, Hugging Face, embeddings, RAG, semantic search, and prompt engineering.</li>
+        <li>Build FastAPI REST services and use MLflow for experiment tracking, model versioning, artifacts, and model registry workflows.</li>
+        <li>Support automated, containerized ML deployment using Airflow, CI/CD, Docker, Kubernetes, and AWS.</li>
+      </ul>
+    </article>
+
+    <article class="exp">
+      <div class="exp-head">
+        <div><h3>Data Engineer · Capgemini</h3><div class="section-sub">Hyderabad, India</div></div>
+        <div class="exp-meta">Jul 2021 – Dec 2022</div>
+      </div>
+      <ul>
+        <li>Developed Python and SQL-based data-processing solutions supporting analytics and machine-learning workloads.</li>
+        <li>Built ETL/ELT pipelines integrating relational databases, APIs, files, cloud storage, and enterprise sources.</li>
+        <li>Developed scalable transformations with Pandas, PySpark, Apache Spark, and SQL while supporting Kafka-based ingestion.</li>
+        <li>Prepared ML datasets through cleansing, validation, normalization, transformation, and feature engineering.</li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="eyebrow">Selected AI/ML Projects</div>
+  <h2 class="section-title">From GenAI to production MLOps.</h2>
+  <p class="section-sub">Independent portfolio projects demonstrating AI/ML engineering skills with non-proprietary, synthetic data.</p>
+
+  <div class="projects">
+    <article class="card project">
+      <div class="visual"><span class="tag">Generative AI · RAG</span></div>
+      <div class="project-body">
+        <h3>Enterprise RAG Knowledge Assistant</h3>
+        <p>Document retrieval and grounded question-answering architecture for enterprise policies, SOPs, and knowledge documents.</p>
+        <div class="stack"><span class="tag">Python</span><span class="tag">RAG</span><span class="tag">FastAPI</span><span class="tag">NLP</span></div>
+        <a class="btn secondary" href="https://github.com/Kundana2508/enterprise-rag-knowledge-assistant" target="_blank">View Project →</a>
+      </div>
+    </article>
+
+    <article class="card project">
+      <div class="visual"><span class="tag">Machine Learning</span></div>
+      <div class="project-body">
+        <h3>Predictive Maintenance ML</h3>
+        <p>Machine-learning system for predicting equipment failure risk and producing a maintenance prioritization queue.</p>
+        <div class="stack"><span class="tag">Scikit-learn</span><span class="tag">Random Forest</span><span class="tag">Predictive Analytics</span></div>
+        <a class="btn secondary" href="https://github.com/Kundana2508/predictive-maintenance-ml" target="_blank">View Project →</a>
+      </div>
+    </article>
+
+    <article class="card project">
+      <div class="visual"><span class="tag">NLP</span></div>
+      <div class="project-body">
+        <h3>NLP Support Ticket Classifier</h3>
+        <p>Text-classification system for automatically categorizing technical support tickets and exposing predictions through an API.</p>
+        <div class="stack"><span class="tag">NLP</span><span class="tag">Text Classification</span><span class="tag">FastAPI</span></div>
+        <a class="btn secondary" href="https://github.com/Kundana2508/nlp-support-ticket-classifier" target="_blank">View Project →</a>
+      </div>
+    </article>
+
+    <article class="card project">
+      <div class="visual"><span class="tag">Deep Learning · Vision</span></div>
+      <div class="project-body">
+        <h3>Deep Learning Defect Detection</h3>
+        <p>CNN-based computer-vision project for classifying manufactured components as normal or defective.</p>
+        <div class="stack"><span class="tag">TensorFlow</span><span class="tag">CNN</span><span class="tag">Computer Vision</span></div>
+        <a class="btn secondary" href="https://github.com/Kundana2508/turbo-couscous" target="_blank">View Project →</a>
+      </div>
+    </article>
+
+    <article class="card project">
+      <div class="visual"><span class="tag">MLOps</span></div>
+      <div class="project-body">
+        <h3>Production ML & MLOps</h3>
+        <p>Production-oriented ML architecture combining model training, FastAPI serving, Docker, CI/CD, model versioning, and monitoring.</p>
+        <div class="stack"><span class="tag">FastAPI</span><span class="tag">Docker</span><span class="tag">CI/CD</span><span class="tag">MLOps</span></div>
+        <a class="btn secondary" href="https://github.com/Kundana2508/production-ml-mlops" target="_blank">View Project →</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="eyebrow">Technical Capabilities</div>
+  <h2 class="section-title">Technology stack</h2>
+  <div class="skills">
+    <div class="skill"><h3>Machine Learning</h3><p>Scikit-learn, XGBoost, LightGBM, classification, regression, clustering, anomaly detection, forecasting, feature engineering, model evaluation.</p></div>
+    <div class="skill"><h3>Generative AI</h3><p>LLMs, prompt engineering, embeddings, RAG, semantic search, vector search, document Q&A, LangChain.</p></div>
+    <div class="skill"><h3>Deep Learning & NLP</h3><p>PyTorch, TensorFlow, neural networks, Transformers, Hugging Face, BERT, NLP, text classification.</p></div>
+    <div class="skill"><h3>MLOps</h3><p>MLflow, Airflow, model deployment, serving, registry, versioning, monitoring, experiment tracking, CI/CD.</p></div>
+    <div class="skill"><h3>Data Engineering</h3><p>ETL/ELT, Spark, PySpark, Kafka, Hadoop, Databricks, Delta Lake, data validation, transformation, and quality.</p></div>
+    <div class="skill"><h3>Cloud & Development</h3><p>AWS, S3, SageMaker, Glue, Redshift, Docker, Kubernetes, Jenkins, GitHub Actions, Python, SQL, FastAPI, REST APIs.</p></div>
+  </div>
+</section>
+
+<section id="certifications">
+  <div class="eyebrow">Certifications</div>
+  <h2 class="section-title">Professional credentials</h2>
+  <div class="certs">
+    <div class="cert">AWS Certified Machine Learning Engineer – Associate</div>
+    <div class="cert">Microsoft Certified: Azure AI Engineer Associate</div>
+    <div class="cert">Databricks Certified Machine Learning Associate</div>
+  </div>
+</section>
+
+<section id="education">
+  <div class="eyebrow">Education</div>
+  <h2 class="section-title">Academic foundation</h2>
+  <div class="edu-grid">
+    <div class="edu"><h3>Master's Degree in Data Analytics</h3><p>Indiana Wesleyan University<br>Jan 2023 – May 2025</p></div>
+    <div class="edu"><h3>Bachelor's Degree in Information Technology</h3><p>July 2017 – June 2021</p></div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="eyebrow">Contact</div>
+  <h2 class="section-title">Let's build something intelligent.</h2>
+  <div class="contact-grid">
+    <div class="contact-card">
+      <div class="contact-line"><strong>Email</strong><br><a href="mailto:kundana2500@gmail.com">kundana2500@gmail.com</a></div>
+      <div class="contact-line"><strong>LinkedIn</strong><br><a target="_blank" href="https://www.linkedin.com/in/kundana2500">linkedin.com/in/kundana2500</a></div>
+      <div class="contact-line"><strong>GitHub</strong><br><a target="_blank" href="https://github.com/Kundana2508">github.com/Kundana2508</a></div>
+    </div>
+    <div class="contact-card">
+      <h3>Open to AI/ML opportunities</h3>
+      <p>Machine Learning · Generative AI · NLP · MLOps · Data Engineering · Production AI Systems</p>
+      <a class="btn primary" href="mailto:kundana2500@gmail.com">Email Me</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>© 2026 Kundana Rangineni · AI/ML Engineer Portfolio</footer>
+</body>
+</html>
