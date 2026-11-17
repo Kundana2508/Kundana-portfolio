@@ -1,0 +1,1771 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Kundana Rao | AI/ML Engineer</title>
+
+<meta
+  name="description"
+  content="Portfolio of Kundana Rao, AI/ML Engineer specializing in Machine Learning, Generative AI, Deep Learning, NLP, RAG, MLOps, Data Engineering, and cloud-based AI systems."
+>
+
+<style>
+
+:root{
+  --paper:#f4f7fb;
+  --white:#ffffff;
+  --ink:#10131a;
+  --muted:#667085;
+  --line:#dce3ee;
+  --blue:#3157ff;
+  --purple:#7047eb;
+  --soft-blue:#e8edff;
+  --soft-purple:#f1ecff;
+  --max:1180px;
+}
+
+*{
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  margin:0;
+  color:var(--ink);
+  font-family:"Aptos","Helvetica Neue",Arial,sans-serif;
+
+  background:
+    radial-gradient(
+      circle at 8% 12%,
+      rgba(49,87,255,.09),
+      transparent 24%
+    ),
+    radial-gradient(
+      circle at 92% 20%,
+      rgba(112,71,235,.08),
+      transparent 22%
+    ),
+    var(--paper);
+}
+
+a{
+  text-decoration:none;
+  color:inherit;
+}
+
+.container{
+  width:min(var(--max),calc(100% - 38px));
+  margin:auto;
+}
+
+/* NAVIGATION */
+
+nav{
+  position:sticky;
+  top:0;
+  z-index:50;
+  background:rgba(244,247,251,.92);
+  backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--line);
+}
+
+.nav-inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:22px;
+  padding:18px 0;
+}
+
+.brand{
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:19px;
+  font-weight:700;
+  letter-spacing:-.02em;
+}
+
+.links{
+  display:flex;
+  gap:20px;
+  flex-wrap:wrap;
+  color:var(--muted);
+  font-size:13px;
+  font-weight:700;
+}
+
+.links a:hover{
+  color:var(--blue);
+}
+
+/* GENERAL */
+
+section{
+  padding:82px 0;
+}
+
+.eyebrow{
+  display:inline-block;
+  font-size:11px;
+  font-weight:900;
+  text-transform:uppercase;
+  letter-spacing:.18em;
+  color:var(--blue);
+  background:var(--soft-blue);
+  padding:8px 11px;
+  border-radius:999px;
+  margin-bottom:18px;
+}
+
+h1,
+h2{
+  font-family:Georgia,"Times New Roman",serif;
+}
+
+.section-title{
+  font-size:44px;
+  letter-spacing:-.04em;
+  margin:0 0 13px;
+  font-weight:500;
+}
+
+.section-sub{
+  color:var(--muted);
+  line-height:1.8;
+  max-width:850px;
+}
+
+/* HERO */
+
+.hero{
+  padding-top:110px;
+}
+
+.hero-grid{
+  display:grid;
+  grid-template-columns:1.25fr .75fr;
+  gap:44px;
+  align-items:center;
+}
+
+h1{
+  font-size:clamp(48px,7vw,82px);
+  line-height:1.02;
+  letter-spacing:-.05em;
+  margin:0 0 24px;
+  font-weight:500;
+}
+
+.hero h1 span{
+  color:var(--blue);
+  font-style:italic;
+}
+
+.lead{
+  font-size:19px;
+  line-height:1.8;
+  color:var(--muted);
+  max-width:790px;
+}
+
+.cta{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+  margin-top:30px;
+}
+
+.btn{
+  display:inline-block;
+  padding:13px 18px;
+  border-radius:9px;
+  font-weight:800;
+  border:1px solid var(--line);
+  font-size:13px;
+  background:var(--white);
+  transition:.2s ease;
+}
+
+.btn.primary{
+  background:var(--ink);
+  color:white;
+  border-color:var(--ink);
+}
+
+.btn.primary:hover{
+  transform:translateY(-2px);
+}
+
+.btn.secondary:hover{
+  border-color:var(--blue);
+  color:var(--blue);
+}
+
+/* COMMON CARDS */
+
+.hero-card,
+.card,
+.exp,
+.skill,
+.cert,
+.edu,
+.contact-card{
+  border:1px solid var(--line);
+  background:rgba(255,255,255,.92);
+  border-radius:18px;
+  box-shadow:0 12px 38px rgba(36,47,77,.07);
+}
+
+.hero-card{
+  padding:30px;
+  position:relative;
+}
+
+.hero-card:before{
+  content:"";
+  display:block;
+  width:52px;
+  height:52px;
+  margin-bottom:26px;
+  border-radius:50%;
+
+  background:
+    radial-gradient(
+      circle at center,
+      var(--white) 0 12%,
+      transparent 13%
+    ),
+    conic-gradient(
+      from 0deg,
+      var(--blue),
+      #8a6cff,
+      #38bdf8,
+      var(--blue)
+    );
+
+  box-shadow:0 0 0 10px #edf1ff;
+}
+
+.hero-card h3{
+  font-family:Georgia,serif;
+  font-size:25px;
+  margin:0 0 14px;
+}
+
+.hero-card p{
+  color:var(--muted);
+  line-height:1.75;
+}
+
+.stack{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin-top:18px;
+}
+
+.tag{
+  font-size:11px;
+  font-weight:800;
+  color:#334155;
+  background:#f3f5f9;
+  border:1px solid #e3e8f0;
+  padding:7px 10px;
+  border-radius:999px;
+}
+
+/* ABOUT */
+
+.about-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px;
+  margin-top:27px;
+}
+
+.card{
+  padding:26px;
+}
+
+.card p{
+  color:var(--muted);
+  line-height:1.8;
+}
+
+.card h3,
+.exp h3,
+.skill h3,
+.edu h3,
+.contact-card h3{
+  letter-spacing:-.025em;
+}
+
+/* PROJECTS */
+
+.projects{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:22px;
+  margin-top:30px;
+}
+
+.project{
+  padding:0;
+  overflow:hidden;
+  transition:.25s ease;
+}
+
+.project:hover{
+  transform:translateY(-5px);
+  box-shadow:0 18px 45px rgba(36,47,77,.12);
+}
+
+.project-visual{
+  height:235px;
+  position:relative;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+  border-bottom:1px solid var(--line);
+}
+
+.project-visual h4{
+  position:relative;
+  z-index:5;
+  margin:0;
+  padding:13px 18px;
+  border-radius:12px;
+  background:rgba(255,255,255,.93);
+  box-shadow:0 8px 30px rgba(15,23,42,.12);
+  font-family:Georgia,serif;
+  font-size:21px;
+  text-align:center;
+}
+
+.rag-visual{
+  background:
+    radial-gradient(
+      circle at 25% 45%,
+      rgba(49,87,255,.25),
+      transparent 18%
+    ),
+    radial-gradient(
+      circle at 75% 55%,
+      rgba(112,71,235,.25),
+      transparent 18%
+    ),
+    linear-gradient(135deg,#e8edff,#f7f4ff);
+}
+
+.rag-visual:before,
+.rag-visual:after{
+  content:"";
+  position:absolute;
+  width:90px;
+  height:115px;
+  border-radius:12px;
+  background:white;
+  border:2px solid #b9c7ff;
+}
+
+.rag-visual:before{
+  left:12%;
+  transform:rotate(-8deg);
+}
+
+.rag-visual:after{
+  right:12%;
+  border-radius:50%;
+  background:#7047eb;
+  border:12px solid #e7e1ff;
+}
+
+.maintenance-visual{
+  background:linear-gradient(135deg,#dff7ff,#e8f2f7);
+}
+
+.maintenance-visual:before{
+  content:"⚙";
+  position:absolute;
+  left:12%;
+  font-size:130px;
+  color:#3157ff;
+  opacity:.7;
+}
+
+.maintenance-visual:after{
+  content:"↗";
+  position:absolute;
+  right:14%;
+  font-size:115px;
+  font-weight:bold;
+  color:#0e7490;
+  opacity:.55;
+}
+
+.nlp-visual{
+  background:linear-gradient(135deg,#eef2ff,#f5f3ff);
+}
+
+.nlp-visual:before{
+  content:"A  →  NLP  →  B";
+  position:absolute;
+  font-weight:900;
+  font-size:32px;
+  letter-spacing:.06em;
+  color:#3157ff;
+  opacity:.22;
+}
+
+.defect-visual{
+  background:linear-gradient(135deg,#e6f7f2,#edf4ff);
+}
+
+.defect-visual:before{
+  content:"";
+  position:absolute;
+  width:115px;
+  height:115px;
+  border:7px solid #16a34a;
+  left:15%;
+}
+
+.defect-visual:after{
+  content:"";
+  position:absolute;
+  width:115px;
+  height:115px;
+  border:7px solid #ef4444;
+  right:15%;
+}
+
+.mlops-visual{
+  background:linear-gradient(135deg,#eef2ff,#f5f3ff);
+}
+
+.mlops-visual:before{
+  content:"TRAIN  →  VERSION  →  SERVE  →  DEPLOY  →  MONITOR";
+  position:absolute;
+  width:88%;
+  text-align:center;
+  color:#3157ff;
+  font-size:17px;
+  font-weight:900;
+  letter-spacing:.04em;
+  top:45px;
+}
+
+.project-body{
+  padding:25px;
+}
+
+.project h3{
+  font-family:Georgia,serif;
+  font-size:25px;
+  margin:0 0 11px;
+  font-weight:600;
+}
+
+.project p{
+  color:var(--muted);
+  line-height:1.72;
+  margin:0;
+}
+
+.project .btn{
+  margin-top:20px;
+}
+
+/* EXPERIENCE */
+
+.experience{
+  display:grid;
+  gap:18px;
+  margin-top:29px;
+}
+
+.exp{
+  padding:27px;
+  border-left:4px solid var(--blue);
+}
+
+.exp-head{
+  display:flex;
+  justify-content:space-between;
+  gap:18px;
+  flex-wrap:wrap;
+}
+
+.exp h3{
+  margin:0;
+  font-size:23px;
+}
+
+.exp-meta{
+  color:var(--blue);
+  font-weight:850;
+  font-size:13px;
+}
+
+.exp li{
+  color:var(--muted);
+  line-height:1.75;
+  margin:8px 0;
+}
+
+/* SKILLS */
+
+.skills{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+  margin-top:27px;
+}
+
+.skill{
+  padding:22px;
+}
+
+.skill h3{
+  margin:0 0 12px;
+  font-size:18px;
+}
+
+.skill p{
+  color:var(--muted);
+  line-height:1.72;
+  margin:0;
+}
+
+/* CERTIFICATIONS */
+
+.certs{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+  margin-top:27px;
+}
+
+.cert{
+  padding:23px;
+  font-weight:850;
+  line-height:1.5;
+  border-top:3px solid var(--purple);
+}
+
+/* EDUCATION */
+
+.edu-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:18px;
+  margin-top:27px;
+}
+
+.edu{
+  padding:23px;
+}
+
+.edu p{
+  color:var(--muted);
+  line-height:1.65;
+}
+
+/* CONTACT */
+
+.contact-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px;
+  margin-top:27px;
+}
+
+.contact-card{
+  padding:25px;
+}
+
+.contact-card p{
+  color:var(--muted);
+  line-height:1.75;
+}
+
+.contact-line{
+  padding:12px 0;
+  border-bottom:1px solid var(--line);
+}
+
+footer{
+  padding:32px 0 52px;
+  color:var(--muted);
+  text-align:center;
+  font-size:13px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+  .hero-grid,
+  .about-grid,
+  .projects,
+  .contact-grid,
+  .edu-grid{
+    grid-template-columns:1fr;
+  }
+
+  .skills,
+  .certs{
+    grid-template-columns:1fr 1fr;
+  }
+
+}
+
+@media(max-width:620px){
+
+  .nav-inner{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+
+  .skills,
+  .certs{
+    grid-template-columns:1fr;
+  }
+
+  section{
+    padding:60px 0;
+  }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+
+  <div class="container nav-inner">
+
+    <div class="brand">
+      KUNDANA RAO
+    </div>
+
+    <div class="links">
+
+      <a href="#about">
+        About
+      </a>
+
+      <a href="#experience">
+        Experience
+      </a>
+
+      <a href="#projects">
+        Projects
+      </a>
+
+      <a href="#skills">
+        Skills
+      </a>
+
+      <a href="#certifications">
+        Certifications
+      </a>
+
+      <a href="#education">
+        Education
+      </a>
+
+      <a href="#contact">
+        Contact
+      </a>
+
+    </div>
+
+  </div>
+
+</nav>
+
+<main class="container">
+
+<!-- HERO -->
+
+<section class="hero">
+
+  <div class="hero-grid">
+
+    <div>
+
+      <div class="eyebrow">
+        AI/ML Engineer · Machine Learning · Generative AI · MLOps
+      </div>
+
+      <h1>
+        Building
+        <span>
+          intelligent AI systems
+        </span>
+        from data to production.
+      </h1>
+
+      <p class="lead">
+
+        AI/ML Engineer with 3+ years of experience building and
+        deploying machine learning and Generative AI solutions
+        across the end-to-end ML lifecycle.
+
+        Strong expertise in Python, SQL, PyTorch, Scikit-learn,
+        MLflow, and AWS, with hands-on experience in predictive
+        modeling, deep learning, NLP, RAG, scalable data pipelines,
+        and MLOps.
+
+      </p>
+
+      <div class="cta">
+
+        <a
+          class="btn primary"
+          href="#projects">
+          Explore Projects
+        </a>
+
+        <a
+          class="btn secondary"
+          href="https://github.com/Kundana2508"
+          target="_blank"
+          rel="noopener noreferrer">
+          GitHub
+        </a>
+
+        <a
+          class="btn secondary"
+          href="https://www.linkedin.com/in/kundana2525"
+          target="_blank"
+          rel="noopener noreferrer">
+          LinkedIn
+        </a>
+
+        <a
+          class="btn secondary"
+          href="https://Kundana2508.github.io/Kundana-portfolio/FAI_ML Resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer">
+          Resume
+        </a>
+
+      </div>
+
+    </div>
+
+    <div class="hero-card">
+
+      <h3>
+        AI / ML Engineering
+      </h3>
+
+      <p>
+
+        Developing production-ready machine learning applications,
+        REST APIs, automated workflows, model deployment,
+        monitoring, and cloud-based AI solutions.
+
+      </p>
+
+      <div class="stack">
+
+        <span class="tag">
+          Python
+        </span>
+
+        <span class="tag">
+          SQL
+        </span>
+
+        <span class="tag">
+          PyTorch
+        </span>
+
+        <span class="tag">
+          TensorFlow
+        </span>
+
+        <span class="tag">
+          Scikit-learn
+        </span>
+
+        <span class="tag">
+          Generative AI
+        </span>
+
+        <span class="tag">
+          RAG
+        </span>
+
+        <span class="tag">
+          Hugging Face
+        </span>
+
+        <span class="tag">
+          MLflow
+        </span>
+
+        <span class="tag">
+          Airflow
+        </span>
+
+        <span class="tag">
+          AWS
+        </span>
+
+        <span class="tag">
+          Docker
+        </span>
+
+        <span class="tag">
+          Kubernetes
+        </span>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section id="about">
+
+  <div class="eyebrow">
+    About
+  </div>
+
+  <h2 class="section-title">
+    End-to-end AI/ML engineering.
+  </h2>
+
+  <p class="section-sub">
+
+    My work spans the complete machine-learning lifecycle,
+    including data ingestion, validation, exploratory analysis,
+    feature engineering, model development, evaluation,
+    deployment, model serving, workflow automation,
+    monitoring, and cloud-based production support.
+
+  </p>
+
+  <div class="about-grid">
+
+    <div class="card">
+
+      <h3>
+        Machine Learning & Deep Learning
+      </h3>
+
+      <p>
+
+        Experience developing classification, regression,
+        clustering, anomaly-detection, predictive modeling,
+        and forecasting solutions using Scikit-learn,
+        XGBoost, LightGBM, PyTorch, and TensorFlow.
+
+      </p>
+
+    </div>
+
+    <div class="card">
+
+      <h3>
+        Generative AI & NLP
+      </h3>
+
+      <p>
+
+        Experience building LLM-powered applications using
+        prompt engineering, Hugging Face, embeddings,
+        RAG, semantic search, vector search,
+        document Q&A, LangChain, and Transformers.
+
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- EXPERIENCE -->
+
+<section id="experience">
+
+  <div class="eyebrow">
+    Professional Experience
+  </div>
+
+  <h2 class="section-title">
+    Building production-ready AI and data systems.
+  </h2>
+
+  <div class="experience">
+
+    <article class="exp">
+
+      <div class="exp-head">
+
+        <div>
+
+          <h3>
+            AI/ML Engineer · Lear Corporation
+          </h3>
+
+          <div class="section-sub">
+            Southfield, Michigan
+          </div>
+
+        </div>
+
+        <div class="exp-meta">
+          Mar 2025 – Present
+        </div>
+
+      </div>
+
+      <ul>
+
+        <li>
+          Develop Python- and SQL-based machine learning solutions for predictive analytics, classification, anomaly detection, and data-driven decision support.
+        </li>
+
+        <li>
+          Build end-to-end ML workflows covering data ingestion, validation, preprocessing, feature engineering, model training, evaluation, inference, and scheduled execution.
+        </li>
+
+        <li>
+          Prepare and analyze datasets using Python, Pandas, and NumPy; investigate missing values, data inconsistencies, distributions, correlations, and potential predictive features.
+        </li>
+
+        <li>
+          Engineer model features through missing-value treatment, categorical encoding, normalization, aggregation, and feature selection to prepare data for model development.
+        </li>
+
+        <li>
+          Train and evaluate classification and regression models using Scikit-learn and XGBoost; apply cross-validation and hyperparameter tuning and assess results with appropriate evaluation metrics.
+        </li>
+
+        <li>
+          Develop and assess neural-network and deep-learning models using PyTorch and TensorFlow for predictive modeling and classification use cases.
+        </li>
+
+        <li>
+          Develop NLP and Generative AI workflows using LLMs, Hugging Face, embeddings, prompt engineering, semantic search, and Retrieval-Augmented Generation (RAG).
+        </li>
+
+        <li>
+          Build document-processing workflows that support document parsing, metadata extraction, embedding generation, vector indexing, retrieval, and context preparation using LangChain and vector search technologies.
+        </li>
+
+        <li>
+          Develop FastAPI-based REST endpoints to make ML models and AI capabilities accessible to downstream applications; implement request validation, logging, exception handling, and testing.
+        </li>
+
+        <li>
+          Use MLflow to track experiments, manage model versions and artifacts, and organize models through the model registry; support workflow automation and deployment using Apache Airflow, CI/CD, Docker, Kubernetes, and AWS services.
+        </li>
+
+      </ul>
+
+    </article>
+
+
+    <article class="exp">
+
+      <div class="exp-head">
+
+        <div>
+
+          <h3>
+            Data Engineer · Capgemini
+          </h3>
+
+          <div class="section-sub">
+            Bengaluru, India
+          </div>
+
+        </div>
+
+        <div class="exp-meta">
+          Jul 2021 – Dec 2022
+        </div>
+
+      </div>
+
+      <ul>
+
+        <li>
+          Developed Python- and SQL-based data-processing solutions to support enterprise analytics and machine learning workloads.
+        </li>
+
+        <li>
+          Built and maintained ETL/ELT workflows to integrate data from relational databases, APIs, flat files, cloud storage, and other enterprise data sources.
+        </li>
+
+        <li>
+          Implemented data-ingestion and streaming workflows using Apache Kafka to make source data available for downstream processing and analytics.
+        </li>
+
+        <li>
+          Transformed structured and semi-structured datasets using Python, SQL, Pandas, Apache Spark, and PySpark.
+        </li>
+
+        <li>
+          Applied data-cleansing and preparation steps, including deduplication, normalization, standardization, and transformation, to create analysis- and model-ready datasets.
+        </li>
+
+        <li>
+          Implemented data validation and quality checks for schema consistency, missing values, duplicate records, invalid data, data types, and pipeline completeness.
+        </li>
+
+        <li>
+          Developed reusable Python components and Apache Airflow workflows to automate ingestion, preprocessing, validation, and machine-learning dataset preparation.
+        </li>
+
+        <li>
+          Processed large datasets using Hadoop, PySpark, and Spark SQL; worked with distributed transformations, joins, and partitioning to support scalable processing.
+        </li>
+
+        <li>
+          Performed exploratory data analysis using Pandas, NumPy, Matplotlib, and statistical methods to identify patterns, trends, anomalies, and data-quality issues.
+        </li>
+
+        <li>
+          Developed and evaluated classification, regression, clustering, and anomaly-detection models using Scikit-learn; assessed model results with accuracy, precision, recall, F1-score, ROC-AUC, MAE, MSE, and RMSE.
+        </li>
+
+      </ul>
+
+    </article>
+
+  </div>
+
+</section>
+
+
+<!-- PROJECTS -->
+
+<section id="projects">
+
+  <div class="eyebrow">
+    Selected AI/ML Projects
+  </div>
+
+  <h2 class="section-title">
+    Applied AI, machine learning, and MLOps.
+  </h2>
+
+  <p class="section-sub">
+
+    Portfolio projects demonstrating practical AI/ML engineering,
+    including RAG, predictive modeling, NLP,
+    deep learning, and production MLOps.
+
+  </p>
+
+  <div class="projects">
+
+
+    <article class="card project">
+
+      <div class="project-visual rag-visual">
+
+        <h4>
+          Documents → Embeddings → Vector DB → LLM
+        </h4>
+
+      </div>
+
+      <div class="project-body">
+
+        <h3>
+          Enterprise RAG Knowledge Assistant
+        </h3>
+
+        <p>
+
+          Retrieval-Augmented Generation architecture
+          for enterprise document search,
+          semantic retrieval, context construction,
+          and grounded question answering.
+
+        </p>
+
+        <div class="stack">
+
+          <span class="tag">
+            Python
+          </span>
+
+          <span class="tag">
+            RAG
+          </span>
+
+          <span class="tag">
+            Embeddings
+          </span>
+
+          <span class="tag">
+            LangChain
+          </span>
+
+          <span class="tag">
+            FastAPI
+          </span>
+
+        </div>
+
+        <a
+          class="btn secondary"
+          href="https://github.com/Kundana2508/enterprise-rag-knowledge-assistant"
+          target="_blank"
+          rel="noopener noreferrer">
+          View Project →
+        </a>
+
+      </div>
+
+    </article>
+
+
+    <article class="card project">
+
+      <div class="project-visual maintenance-visual">
+
+        <h4>
+          Predict Equipment Failure Before It Happens
+        </h4>
+
+      </div>
+
+      <div class="project-body">
+
+        <h3>
+          Predictive Maintenance ML
+        </h3>
+
+        <p>
+
+          Predictive machine-learning workflow
+          designed to identify equipment-failure risk,
+          engineer operational features,
+          and prioritize maintenance decisions.
+
+        </p>
+
+        <div class="stack">
+
+          <span class="tag">
+            Scikit-learn
+          </span>
+
+          <span class="tag">
+            XGBoost
+          </span>
+
+          <span class="tag">
+            Feature Engineering
+          </span>
+
+          <span class="tag">
+            Predictive Modeling
+          </span>
+
+        </div>
+
+        <a
+          class="btn secondary"
+          href="https://github.com/Kundana2508/predictive-maintenance-ml"
+          target="_blank"
+          rel="noopener noreferrer">
+          View Project →
+        </a>
+
+      </div>
+
+    </article>
+
+
+    <article class="card project">
+
+      <div class="project-visual nlp-visual">
+
+        <h4>
+          Support Ticket → NLP → Category
+        </h4>
+
+      </div>
+
+      <div class="project-body">
+
+        <h3>
+          NLP Support Ticket Classifier
+        </h3>
+
+        <p>
+
+          NLP-based text-classification system
+          for categorizing support requests
+          and exposing real-time predictions
+          through a REST API.
+
+        </p>
+
+        <div class="stack">
+
+          <span class="tag">
+            NLP
+          </span>
+
+          <span class="tag">
+            Text Classification
+          </span>
+
+          <span class="tag">
+            Scikit-learn
+          </span>
+
+          <span class="tag">
+            FastAPI
+          </span>
+
+        </div>
+
+        <a
+          class="btn secondary"
+          href="https://github.com/Kundana2508/nlp-support-ticket-classifier"
+          target="_blank"
+          rel="noopener noreferrer">
+          View Project →
+        </a>
+
+      </div>
+
+    </article>
+
+
+    <article class="card project">
+
+      <div class="project-visual defect-visual">
+
+        <h4>
+          Deep Learning Quality Inspection
+        </h4>
+
+      </div>
+
+      <div class="project-body">
+
+        <h3>
+          Deep Learning Defect Detection
+        </h3>
+
+        <p>
+
+          Deep-learning classification workflow
+          for identifying normal and defective
+          manufactured components using neural networks
+          and image-based predictive modeling.
+
+        </p>
+
+        <div class="stack">
+
+          <span class="tag">
+            TensorFlow
+          </span>
+
+          <span class="tag">
+            PyTorch
+          </span>
+
+          <span class="tag">
+            Neural Networks
+          </span>
+
+          <span class="tag">
+            Deep Learning
+          </span>
+
+        </div>
+
+        <a
+          class="btn secondary"
+          href="https://github.com/Kundana2508/deep-learning-defect-detection"
+          target="_blank"
+          rel="noopener noreferrer">
+          View Project →
+        </a>
+
+      </div>
+
+    </article>
+
+
+    <article class="card project">
+
+      <div class="project-visual mlops-visual">
+
+        <h4>
+          End-to-End Production ML Lifecycle
+        </h4>
+
+      </div>
+
+      <div class="project-body">
+
+        <h3>
+          Production ML & MLOps
+        </h3>
+
+        <p>
+
+          Production-oriented machine-learning architecture
+          combining experiment tracking,
+          model versioning, API serving,
+          Docker containerization,
+          CI/CD, and model monitoring.
+
+        </p>
+
+        <div class="stack">
+
+          <span class="tag">
+            MLflow
+          </span>
+
+          <span class="tag">
+            FastAPI
+          </span>
+
+          <span class="tag">
+            Docker
+          </span>
+
+          <span class="tag">
+            CI/CD
+          </span>
+
+          <span class="tag">
+            MLOps
+          </span>
+
+        </div>
+
+        <a
+          class="btn secondary"
+          href="https://github.com/Kundana2508/production-ml-mlops"
+          target="_blank"
+          rel="noopener noreferrer">
+          View Project →
+        </a>
+
+      </div>
+
+    </article>
+
+
+  </div>
+
+</section>
+
+
+<!-- SKILLS -->
+
+<section id="skills">
+
+  <div class="eyebrow">
+    Technical Skills
+  </div>
+
+  <h2 class="section-title">
+    AI/ML technology stack.
+  </h2>
+
+  <div class="skills">
+
+
+    <div class="skill">
+
+      <h3>
+        Programming & APIs
+      </h3>
+
+      <p>
+        Python, SQL, Bash/Shell Scripting,
+        REST APIs, FastAPI, Git, Linux
+      </p>
+
+    </div>
+
+
+    <div class="skill">
+
+      <h3>
+        Machine Learning
+      </h3>
+
+      <p>
+        Scikit-learn, XGBoost, LightGBM,
+        Classification, Regression, Clustering,
+        Anomaly Detection, Predictive Modeling,
+        Forecasting, Feature Engineering,
+        Model Evaluation, Hyperparameter Tuning
+      </p>
+
+    </div>
+
+
+    <div class="skill">
+
+      <h3>
+        Deep Learning & NLP
+      </h3>
+
+      <p>
+        PyTorch, TensorFlow, Neural Networks,
+        Transformers, Hugging Face, BERT,
+        Natural Language Processing,
+        Text Classification
+      </p>
+
+    </div>
+
+
+    <div class="skill">
+
+      <h3>
+        Generative AI
+      </h3>
+
+      <p>
+        LLMs, Prompt Engineering, Embeddings,
+        RAG, Semantic Search, Vector Search,
+        Document Q&A, LangChain
+      </p>
+
+    </div>
+
+
+    <div class="skill">
+
+      <h3>
+        MLOps
+      </h3>
+
+      <p>
+        MLflow, Apache Airflow,
+        Model Deployment, Model Serving,
+        Model Registry, Model Versioning,
+        Model Monitoring, Experiment Tracking,
+        CI/CD, Docker, Kubernetes
+      </p>
+
+    </div>
+
+
+    <div class="skill">
+
+      <h3>
+        Data Engineering
+      </h3>
+
+      <p>
+        ETL/ELT, Data Ingestion,
+        Data Transformation, Data Validation,
+        Data Quality, Apache Spark,
+        PySpark, Apache Kafka,
+        Hadoop, Databricks, Delta Lake
+      </p>
+
+    </div>
+
+
+    <div class="skill">
+
+      <h3>
+        Cloud & DevOps
+      </h3>
+
+      <p>
+        AWS, S3, SageMaker, Glue,
+        Redshift, Docker, Kubernetes,
+        Jenkins, GitHub Actions
+      </p>
+
+    </div>
+
+
+    <div class="skill">
+
+      <h3>
+        Databases
+      </h3>
+
+      <p>
+        PostgreSQL, MySQL,
+        SQL Server, Oracle,
+        Snowflake, MongoDB
+      </p>
+
+    </div>
+
+
+    <div class="skill">
+
+      <h3>
+        Data Analysis
+      </h3>
+
+      <p>
+        Pandas, NumPy, Matplotlib,
+        Exploratory Data Analysis,
+        Statistical Analysis
+      </p>
+
+    </div>
+
+
+    <div class="skill">
+
+      <h3>
+        Development Methodologies
+      </h3>
+
+      <p>
+        Agile, Scrum, SDLC,
+        Code Reviews
+      </p>
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+<!-- CERTIFICATIONS -->
+
+<section id="certifications">
+
+  <div class="eyebrow">
+    Certifications
+  </div>
+
+  <h2 class="section-title">
+    Professional credentials.
+  </h2>
+
+  <div class="certs">
+
+    <div class="cert">
+      AWS Certified Machine Learning Engineer – Associate
+    </div>
+
+    <div class="cert">
+      Microsoft Certified: Azure AI Engineer Associate
+    </div>
+
+    <div class="cert">
+      Databricks Certified Machine Learning Associate
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- EDUCATION -->
+
+<section id="education">
+
+  <div class="eyebrow">
+    Education
+  </div>
+
+  <h2 class="section-title">
+    Academic background.
+  </h2>
+
+  <div class="edu-grid">
+
+    <div class="edu">
+
+      <h3>
+        Master's Degree in Data Analytics
+      </h3>
+
+      <p>
+        Indiana Wesleyan University
+        <br>
+        Aug 2023 – May 2025
+      </p>
+
+    </div>
+
+    <div class="edu">
+
+      <h3>
+        Bachelor's Degree in Information Technology
+      </h3>
+
+      <p>
+        July 2017 – June 2021
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+  <div class="eyebrow">
+    Contact
+  </div>
+
+  <h2 class="section-title">
+    Let's build intelligent systems.
+  </h2>
+
+  <p class="section-sub">
+
+    Interested in AI/ML engineering,
+    Generative AI, machine learning,
+    NLP, MLOps, data engineering,
+    and production AI opportunities.
+
+  </p>
+
+  <div class="contact-grid">
+
+    <div class="contact-card">
+
+      <div class="contact-line">
+
+        <strong>
+          Email
+        </strong>
+
+        <br>
+
+        <a href="mailto:kundana2525@gmail.com">
+          kundana2525@gmail.com
+        </a>
+
+      </div>
+
+
+      <div class="contact-line">
+
+        <strong>
+          Phone
+        </strong>
+
+        <br>
+
+        <a href="tel:+18107718850">
+          +1 810-771-8850
+        </a>
+
+      </div>
+
+
+      <div class="contact-line">
+
+        <strong>
+          LinkedIn
+        </strong>
+
+        <br>
+
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.linkedin.com/in/kundana2525">
+          linkedin.com/in/kundana2525
+        </a>
+
+      </div>
+
+
+      <div class="contact-line">
+
+        <strong>
+          GitHub
+        </strong>
+
+        <br>
+
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://github.com/Kundana2508">
+          github.com/Kundana2508
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <div class="contact-card">
+
+      <h3>
+        AI/ML Engineer
+      </h3>
+
+      <p>
+
+        Machine Learning · Deep Learning ·
+        Generative AI · NLP · RAG · MLOps ·
+        Data Engineering · AWS · Production AI
+
+      </p>
+
+      <a
+        class="btn primary"
+        href="mailto:kundana2525@gmail.com">
+        Email Me
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+</main>
+
+
+<footer>
+
+  © 2026 Kundana Rao · AI/ML Engineer Portfolio
+
+</footer>
+
+
+</body>
+</html>
